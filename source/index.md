@@ -1,13 +1,26 @@
-> ℹ️ You are {% if slide %}viewing the 📊 presentation for{% else %}reading the 📚 documentation of{% endif %} the
-
 ```{include} ../README.md
-:end-before: <!-- include-upper -->
+:end-before: <!-- include-before -->
 ```
 
-```{toctree}
-:caption: Table of content
-:maxdepth: 2
+{% if build == "slides" %}
+:::{admonition} Authors
+:class: note, margin
+Dr. Jonas I. Liechti  
+Dr. Matteo Delucchi
+:::
 
-content/howto/index
-content/examples/index
+{% else %}
+### Authors
+
+**Dr. Jonas I. Liechti**  
+**Dr. Matteo Delucchi**  
+{% endif %}
+
+
+### Content
+```{toctree}
+:maxdepth: {% if build == "slides" %}1{% else %}4{% endif %}
+{% if build == "slides" %}:numbered:{% endif %}
+
+content/index
 ```
