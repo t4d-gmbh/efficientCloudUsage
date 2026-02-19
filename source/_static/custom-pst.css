@@ -1,0 +1,26 @@
+html {
+  /*****************************************************************************
+  * Overall Layout Variables
+  */
+
+  --pst-color-primary: #7542b7;
+  --pst-color-link: #412f49;
+  --pst-color-link-hover: #721c9e;
+  // --pst-header-height: 4rem;
+  // --pst-header-article-height: calc(var(--pst-header-height) * 2 / 3);
+  // --pst-sidebar-secondary: 17rem;
+}
+
+html[data-theme="light"] {
+  --pst-color-primary: #7542b7;
+  --pst-color-link: #412f49;
+  --pst-color-primary: #7542b7;
+  --pst-color-link-hover: #721c9e;
+}
+html[data-theme="dark"] {
+  --pst-color-primary: #7542b7;
+  --pst-color-link: #ebcff9;
+  --pst-color-link-hover: #c65ef9;
+  // Announcement
+  // --sbt-color-announcement: rgb(97, 97, 97);
+}

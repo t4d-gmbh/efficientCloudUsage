@@ -3,20 +3,20 @@ from setuptools_scm import get_version
 
 # -- Configuration parameter -------------------------------------------------
 # ----------------------------------------------------------------------------
-repository_owner = "FIXME"
-repository_name = "FIXME"
+repository_owner = "T4D-GmbH"
+repository_name = "Efficient Cloud Usage"
 repository_branch = "main"
 # -- set the logo
 course_logo = {
-    "image_light": "_static/FIXME",
-    "image_dark": "_static/FIXME",
-    "alt-text": "",  # FIXME: optionally provide alt text
-    "favicon": "_static/FIXME",
+    "image_light": "_static/T4D_logo_bw.svg",
+    "image_dark": "_static/T4D_logo_wb.svg",
+    "alt-text": "",
+    "favicon": "_static/T4D_logo.svg",
 }
 # -- name your project
-project = 'FIXME'
+project = 'Efficient Cloud Usage'
 # -- provide authorship info
-author = 'FIXME'
+author = 'Jonas I. Liechti; Matteo Delucchi'
 # -- optionally adapt copyright
 # ---OPTIONAL ----------------------------------------------------------------
 # -- custom page url for own domain
@@ -57,7 +57,7 @@ exclude_patterns = []
 
 html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
-html_css_files = ['custom.css',]
+html_css_files = ['custom.css', 'custom-pst.css']
 
 html_context = {
     "default_mode": "light",
@@ -157,7 +157,7 @@ def setup(app):
         # simpler sidebar
         app.config.html_sidebars = {
             "**": [
-                # "navbar-logo.html",
+                "navbar-logo.html",
                 "icon-links.html",
                 # "search-button-field.html",
                 "sbt-sidebar-nav.html"
