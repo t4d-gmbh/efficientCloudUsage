@@ -1,8 +1,8 @@
-# Efficient Cloud Usage
+# Cluster Workflows and Profiling
 
 <!-- include-before -->
 
-This is <img src="./source/_static/T4D_logo.svg" alt="T4D" width="25" height="25">'s guide to efficient work on a (OpenStack) cloud.
+This is <img src="./source/_static/T4D_logo.svg" alt="T4D" width="25" height="25">'s guide to run cluster workflows and profile performance.
 
 ---
 
