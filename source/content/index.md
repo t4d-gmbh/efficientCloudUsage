@@ -10,7 +10,5 @@ profiling/index
 {% if slide %}helloWorldParallel{% endif %}
 {% if slide %}qAndA{% endif %}
 specialTopics/index
-howto/index
-examples/index
 ```
 
