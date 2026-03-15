@@ -7,6 +7,10 @@
 Head over to the [HelloWorld](https://github.com/pSciComp/exoHelloWorld) repository and work through [`HPC - Exo 2`](https://github.com/pSciComp/exoHelloWorld/blob/main/exercises/hpc/Exo_2.md).
 
 {% if slide %}
+:::{admonition} ORAS
+:class: note margin
+[ORAS](https://oras.land/) (OCI Registry As Storage) is a standardized storage service for container images and artifacts, adhering to the [Open Container Initiative (OCI)](https://opencontainers.org/) Distribution Specification. It allows storing and managing container images, ensuring interoperability across platforms. 
+:::
 
 :::{admonition} Your tasks
 :class: tip
