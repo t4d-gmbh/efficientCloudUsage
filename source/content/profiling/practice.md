@@ -1,3 +1,6 @@
+---
+sd_hide_title: true
+---
 ## 👷 Practical Part 👷
 
 {% if page %}
