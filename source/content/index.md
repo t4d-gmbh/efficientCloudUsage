@@ -2,6 +2,8 @@
 :maxdepth: {% if build == "slides" %}1{% else %}4{% endif %}
 :caption: Efficient Cloud Usage
 
+recapHPC/index
+apptainer/index
 hpcAtUZH/index
 loginAndExplore/index
 latencyAndThroughput/index
