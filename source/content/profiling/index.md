@@ -6,6 +6,8 @@
 :maxdepth: 1
 
 ./tools
+./runtime
+./practice
 
 ```
 
@@ -13,6 +15,10 @@
 <!-- BUILDING THE PAGES -->
 
 ```{include} ./tools.md
+```
+```{include} ./runtime.md
+```
+```{include} ./practice.md
 ```
 
 {% endif %}
