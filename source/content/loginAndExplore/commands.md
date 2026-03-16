@@ -38,7 +38,7 @@ df -hT -x tmpfs -x devtmpfs -x squashfs
 # Show only network mounts (CephFS, NFS)
 findmnt -J -t ceph,nfs,nfs4 -o TARGET,SOURCE,FSTYPE
 
-# Disk usage of current directory
+# Disk usage of current directory (AVOID ON SHARED FS!)
 du -sh .
 
 # Show current load average
@@ -56,6 +56,9 @@ module avail 2>&1 | head -30
 
 # Who else is on this login node?
 w
+
+# Show `PATH` variable:
+echo $PATH
 ```
 
 :::

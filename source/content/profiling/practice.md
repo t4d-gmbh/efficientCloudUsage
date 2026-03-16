@@ -1,17 +1,36 @@
-## Performance Profiling: Practical Execution
+## 👷 Practical Part 👷
 
 {% if page %}
 The theoretical understanding of profiling tools is solidified through empirical testing across different hardware architectures. The following exercises isolate specific storage tiers to measure their distinct latency and throughput characteristics.
+
+{% else %}
+::::::{tab-set}
 {% endif %}
+{% if slide %}:::::{tab-item}{% else %}###{% endif %} Local vs. Cloud VM
+### Local vs. Cloud VM
 
-### Phase 1: Local / Cloud Virtual Machine
+Evaluate the performance discrepancy between a locally attached block storage device and network-attached object storage from the perspective of an isolated virtual machine.
 
-Evaluate the performance discrepancy between locally attached block storage and network-attached object storage from the perspective of an isolated virtual machine.
+Use `fio` to evaluate the read/write performance discrepancy between a locally attached block storage device and network-attached block storage on a virtual machine.
 
-1. **Block Storage (`fio`):** Execute the random latency and sequential throughput `fio` commands detailed above within the `/tmp` directory of the VM. Record the IOPS and MB/s metrics.
+Check the discreapancy between volatile temporal storage (typically `/tmp/`) and non-volatile temporal storage (typically `/var/tmp/`).
+
+- Use `df` to check the type of temporal storage.
+- Use `fio` to perform a read/write profiling.
+
+
+:::{admonition} `fio` overwrites!
+:class: warning
+
+`fio` will attempt to overwrite the provided destination!
+:::
+
+{% if slide %}
+:::::
+:::::{tab-item}{% else %}###{% endif %} HPC Cluster (Shared Filesystem)
+
 2. **Object Storage (`wrk`):** Upload a 1GB dummy file to the S3/Swift object storage bucket. Execute the `wrk` command against the object's public or pre-signed URL. Compare the HTTP response latency to the block storage disk latency.
 
-### Phase 2: HPC Cluster (Shared Filesystem)
 
 Evaluate the performance characteristics of an enterprise distributed parallel filesystem compared to object storage.
 
@@ -20,4 +39,9 @@ Evaluate the performance characteristics of an enterprise distributed parallel f
 
 
 2. **Object Storage (`wrk`):** From the same compute node, execute the `wrk` test against the remote object storage bucket. Observe the bandwidth limitations imposed by the cluster's external network uplink compared to the internal InfiniBand/Ethernet fabric used by the shared filesystem.
+
+{% if slide %}
+:::::
+::::::
+{% endif %}
 
