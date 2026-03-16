@@ -6,10 +6,11 @@ recapHPC/index
 apptainer/index
 hpcAtUZH/index
 loginAndExplore/index
+{% if slide %}exo1.md{% endif %}
 latencyAndThroughput/index
 profiling/index
-{% if slide %}helloWorldOnCluster/index{% endif %}
-{% if slide %}helloWorldParallel{% endif %}
+{% if slide %}exo1.md{% endif %}
+{% if slide %}homework{% endif %}
 {% if slide %}qAndA{% endif %}
 specialTopics/index
 ```
