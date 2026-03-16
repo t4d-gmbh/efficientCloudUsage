@@ -13,7 +13,6 @@
 {% if slide %}
 
 ```{epigraph}
-{.centered}
 A national-scale HPC facility operated by CSCS (Swiss National Supercomputing Centre).
 ```
 

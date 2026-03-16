@@ -10,7 +10,7 @@
 squeue -u $USER
 
 # Get detailed info about a specific job
-sacct -j <jobid> --format=JobID,JobName,State,ExitCode,Elapsed
+sacct -j <jobid> --format=JobID,JobName,TotalCPU,ExitCode,Elapsed
 
 # Request an interactive session on a compute node
 srun --cpus-per-task=1 --mem=4G --time=00:20:00 --pty bash
@@ -25,7 +25,7 @@ scancel <jobid>
 sinfo -s
 
 # Check your account's fair-share and usage
-sacctmgr show assoc user=$USER format=Account,User,Share,GrpTRESMins
+sacctmgr show assoc user=$USER format=Account,User,Partition,GrpTRESMins
 ```
 
 :::
